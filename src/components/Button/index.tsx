@@ -7,11 +7,12 @@ type ButtonProps = {
   valueToRender?: string;
   children?: any
   color: string;
+	onPress: () => void
 };
 
-export function Button({ valueToRender, color, children }: ButtonProps) {
+export function Button({ valueToRender, color, children, onPress }: ButtonProps) {
   return (
-    <RectButton style={[styles.container, { backgroundColor: color }]} onPress={() =>{}}>
+    <RectButton style={[styles.container, { backgroundColor: color }]} onPress={onPress}>
       {children ? <View>{children}</View>: <Text style={styles.text}>{valueToRender}</Text>}
     </RectButton>
   );

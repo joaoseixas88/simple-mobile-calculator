@@ -6,7 +6,7 @@ type DisplayResultProps = {
 	value?: string
 }
 
-export function DisplayResult({value = '999999999'}: DisplayResultProps){
+export function DisplayResult({value = '0'}: DisplayResultProps){
 	return(
 		<View style={styles.container}>
 			<Text style={styles.text}>{value}</Text>

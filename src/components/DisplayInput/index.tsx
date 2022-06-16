@@ -6,7 +6,7 @@ type DisplayInputProps = {
 	value?: string
 }
 
-export function DisplayInput({value = '100+20'}: DisplayInputProps){
+export function DisplayInput({value}: DisplayInputProps){
 	return(
 		<View>
 			<Text style={styles.text}>{value}</Text>
