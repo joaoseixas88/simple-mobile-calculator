@@ -3,7 +3,8 @@ export const colors = {
 	primaryGrey: '#4E505F',
 	secondaryGrey: '#2E2F38',
 	background: '#17171C',
-	shape: '#FFF'
+	shape: '#FFF',
+	oldDataColor: '#888888',
 
 
 

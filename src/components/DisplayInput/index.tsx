@@ -2,24 +2,29 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { colors } from "../../styles/theme";
 
-type DisplayInputProps = {
+type DisplayResultProps = {
 	value?: string
 }
 
-export function DisplayInput({value}: DisplayInputProps){
+export function DisplayInput({value = '0'}: DisplayResultProps){
 	return(
-		<View>
-			<Text style={styles.text}>{value}</Text>
+		<View style={styles.container}>
+			<Text 
+			numberOfLines={1}
+			style={styles.text}>{value}</Text>
 		</View>
 	)
 }
 
 const styles = StyleSheet.create({
 	container: {
-		
+		marginBottom: 10,
 	},
 	text:{
-		fontSize: 45,
-		color: colors.primaryGrey
+		fontSize: 55,
+		color: colors.shape,
+		// textAlign: 'right',
+		flexWrap: 'wrap'
+
 	}
 })
